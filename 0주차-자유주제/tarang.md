@@ -1,4 +1,4 @@
-git과 gitHub의 차이
+# git과 gitHub의 차이
 
 #### [Git]
 
