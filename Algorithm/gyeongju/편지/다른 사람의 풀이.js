@@ -1,4 +1,9 @@
 function solution(message) {
-    var answer = message.length * 2;
-    return answer;
+    var horizontal = null;
+    if((typeof message)=="string" ){
+        horizontal = message.length * 2;
+    }
+
+    return horizontal;
+
 }
