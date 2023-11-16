@@ -87,8 +87,8 @@
 
 -   row : 왼쪽에서 오른쪽으로 아이템이 흐르는 가로 방향이다
 -   row-reverse : row와 비슷하며 반대로 배치가 된다
--   column : 아이템들이 위에서 아래로 세로 방향으로 배치가 된다
--   column-reverse : column 과 비슷하며 반대로 배치가 된다
+-   column : 아이템들이 위에서 아래로 세로 방향으로 배치가 된다.
+-   column-reverse : column 과 비슷하며 반대로 배치가 된다.
 
 [##_Image|kage@cQY4cL/btsArygqLFB/I21BVt9X3mmPGDjKqScx1K/img.png|CDM|1.3|{"originWidth":1072,"originHeight":532,"style":"alignCenter","width":743,"height":369,"filename":"스크린샷 2023-11-16 오후 2.56.47.png"}_##]
 
