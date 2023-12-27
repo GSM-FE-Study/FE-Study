@@ -2,20 +2,20 @@
 
 join의 기본형은 
 
-``` js
-    arr.join(separator);
-```
+    ``` js
+        arr.join(separator);
+    ```
 
-이렇게 생겼습니다.
+    이렇게 생겼습니다.
 
-- 예를 하나 들어서 설명하자면 
+    - 예를 하나 들어서 설명하자면 
 
-``` js
-    const hello = ["안녕하세요", "이름", "입니다", " 와"];
+    ``` js
+        const hello = ["안녕하세요", "이름", "입니다", " 와"];
 
-    console.log(hello.join());
-    console.log(hello.join(''));
-    console.log(hello.join('-'));
+        console.log(hello.join());
+        console.log(hello.join(''));
+        console.log(hello.join('-'));
 
 ```
 
