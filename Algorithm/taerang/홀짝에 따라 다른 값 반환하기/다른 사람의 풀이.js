@@ -1,7 +1,3 @@
-2;
-3;
-4;
-5;
 function solution(n) {
   const array = Array(n)
     .fill()
