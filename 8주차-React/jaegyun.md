@@ -22,11 +22,11 @@ gsap.com](https://gsap.com/)
 
 자세한건 공식 홈페이지로 가서 보면 된다.
 
-일단 난 useRef를 이용해서 코드를 짰는데,  
+일단 난 useRef를 이용해서 코드를 짰는데, ``
   
 
 ```
-import { gsap } from "gsap";
+import { gsap } from "gsap";``
 import { useRef, useEffect } from "react";
 
 function App() {
