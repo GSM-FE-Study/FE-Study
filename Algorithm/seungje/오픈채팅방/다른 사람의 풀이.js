@@ -1,24 +1,20 @@
 function solution(record) {
-  const userInfo = {};
-  const action = [];
-  const stateMapping = {
-    Enter: "님이 들어왔습니다.",
-    Leave: "님이 나갔습니다.",
-  };
-
-  record.forEach((v) => {
-    const [state, id, nick] = v.split(" ");
-
-    if (state !== "Change") {
-      action.push([state, id]);
-    }
-
-    if (nick) {
-      userInfo[id] = nick;
-    }
-  });
-
-  return action.map(([state, uid]) => {
-    return `${userInfo[uid]}${stateMapping[state]}`;
-  });
+  var nick = {},
+    a = record.map((v) => v.split(" "));
+  a.slice()
+    .reverse()
+    .forEach((v) => {
+      if (v[2] && !nick[v[1]]) {
+        nick[v[1]] = v[2];
+      }
+    });
+  return a
+    .filter((v) => {
+      return v[0] !== "Change";
+    })
+    .map((v) => {
+      return v[0] === "Enter"
+        ? nick[v[1]] + "님이 들어왔습니다."
+        : nick[v[1]] + "님이 나갔습니다.";
+    });
 }
