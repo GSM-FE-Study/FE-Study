@@ -1,17 +1,13 @@
 function solution(routes) {
-  var answer = 0;
+  routes.sort((a, b) => b[0] - a[0]);
+  const cameras = [routes.shift()];
 
-  routes.sort((a, b) => a[0] - b[0]);
-  let lastCamera = -30001;
+  while (routes.length > 0) {
+    const [on, out] = routes.shift();
+    const [lastOn, lastOut] = cameras.at(-1);
 
-  routes.forEach((route) => {
-    const [enter, exit] = route;
+    if (on > lastOut || out < lastOn) cameras.push([on, out]);
+  }
 
-    if (lastCamera < enter) {
-      answer++;
-      lastCamera = exit;
-    } else if (lastCamera > exit) lastCamera = exit;
-  });
-
-  return answer;
+  return cameras.length;
 }
