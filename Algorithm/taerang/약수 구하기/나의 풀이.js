@@ -8,3 +8,17 @@ function solution(n) {
   }
   return answer;
 }
+
+//2번째 풀이
+function solution(n) {
+  let answer = [];
+  let cnt = 1;
+
+  while (cnt <= n) {
+    if (n % cnt === 0) {
+      answer.push(cnt);
+    }
+    cnt++;
+  }
+  return answer;
+}
