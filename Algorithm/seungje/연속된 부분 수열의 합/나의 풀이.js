@@ -1,13 +1,13 @@
 function solution(sequence, k) {
   const result = [];
 
-  let [forward, back, cnt] = [0, 0, 0];
+  let [front, back, cnt] = [0, 0, 0];
   while (back - 1 < sequence.length) {
     if (cnt <= k) {
-      if (cnt === k) result.push([forward, back - 1, back - forward]);
+      if (cnt === k) result.push([front, back - 1, back - front]);
       cnt += sequence[back++];
     } else if (cnt > k) {
-      cnt -= sequence[forward++];
+      cnt -= sequence[front++];
     }
   }
 
